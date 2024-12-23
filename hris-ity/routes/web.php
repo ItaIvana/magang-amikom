@@ -27,6 +27,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('barang', 'BarangController');
     Route::resource('outlet', 'OutletController');
     Route::resource('survey', 'SurveyStockController');
+    Route::resource('pegawai', 'PegawaiController');
+    Route::resource('dosen', 'DosenController');
+    Route::resource('recruitment', 'RecruitmentController');
+    Route::post('/recruitment/apply', [RecruitmentController::class, 'apply'])->name('recruitment.apply');
+
 });
 
 

@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="icon" href="https://www.showvalue.com/wp-content/uploads/cropped-Icon-SV.png" type="image/x-icon">
-    <title>Sales Visit Kel 3 - @yield('title')</title>
+    <title>Hris ITY - @yield('title')</title>
 
 
     <!-- Required meta tags -->
@@ -46,20 +46,27 @@
                                 @if (Auth::user()->role == 'admin')
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle text-white" href="#" id="dropdownId"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Master
-                                            Data</a>
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pegawai</a>
                                         <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                            <a class="dropdown-item" href="/sales">Sales</a>
-                                            <a class="dropdown-item" href="/barang">Barang</a>
-                                            <a class="dropdown-item" href="/outlet">Outlet</a>
+                                            <a class="dropdown-item" href="/sales">Id</a>
+                                            <a class="dropdown-item" href="/barang">Nik</a>
+                                            <a class="dropdown-item" href="/outlet">Npwp</a>
+                                            <a class="dropdown-item" href="/sales">No_Pegawai</a>
+                                            <a class="dropdown-item" href="/barang">No_Kk</a>
+                                            <a class="dropdown-item" href="/outlet">Pendidikan</a>
+                                            <a class="dropdown-item" href="/sales">Jabatan</a>
+                                            <a class="dropdown-item" href="/barang">Divisi</a>
+                                            <a class="dropdown-item" href="/outlet">Tmt</a>
+                                            <a class="dropdown-item" href="/sales">Purna_Tugas</a>
+                                            <a class="dropdown-item" href="/barang">Status</a>
                                         </div>
                                     </li>
                                 @endif
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle text-white" href="#" id="dropdownId"
-                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Transaksi</a>
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dosen</a>
                                     <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                        <a class="dropdown-item" href="/survey">Survey Stok</a>
+                                        <a class="dropdown-item" href="/survey">Data Dosen</a>
                                     </div>
                                 </li>
                             </ul>

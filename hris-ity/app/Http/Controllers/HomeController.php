@@ -27,12 +27,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $responseSales = HttpClient::get("api/user/sales");
-        $totalSales = count(json_decode($responseSales->getContent(), true));
-        $responseBarang = HttpClient::get('api/barang');
-        $totalBarang = count(json_decode($responseBarang->getContent(), true));
-        $responseOutlet = HttpClient::get('api/outlet');
-        $totalOutlet = count(json_decode($responseOutlet->getContent(), true));
-        return view('home', compact('totalSales', 'totalBarang', 'totalOutlet'));
+
+        return view('home');
     }
 }
